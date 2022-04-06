@@ -1,38 +1,37 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Quicksand", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* home hero styles */
+.hero {
+  background-image: url("./images/rawkkim-I4-0Y68ob7o-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* feeds section styles */
+#feeds {
+  margin-top: 3%;
 }
 
-.App-link {
-  color: #61dafb;
+/* card styles */
+.card {
+  overflow-y: hidden;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p,
+h5 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 1000px;
 }
